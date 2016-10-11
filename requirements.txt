@@ -1,6 +1,6 @@
 flask-restplus==0.9.2
 gunicorn==19.6.0
-numpy==1.9.2
+numpy
 pandas==0.17.1
 scikit-learn==0.17
-SciPy==0.11.0
+SciPy
