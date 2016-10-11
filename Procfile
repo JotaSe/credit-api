@@ -1,1 +1,1 @@
-web: python credit_api.py
+web: gunicorn credit_api:app
