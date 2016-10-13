@@ -1,6 +1,5 @@
 from flask import Flask
-from flask.ext.restplus import Api
-from flask.ext.restplus import fields
+from flask.ext.restplus import Api, Resource, fields
 from sklearn.externals import joblib
 
 app = Flask(__name__)
@@ -80,7 +79,6 @@ resource_fields = api.model('Resource', {
     'result': fields.String,
 })
 
-from flask.ext.restplus import Resource
 @ns.route('/')
 class CreditApi(Resource):
 
